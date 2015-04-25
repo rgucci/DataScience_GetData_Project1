@@ -49,7 +49,8 @@ dataTidy <- dataMerged[, columnsTidy + 2]
 write.table(dataTidy, file=tidyDataFilename, sep=" ", row.names=FALSE, append=FALSE)
 
 #aggregate data and find average of each measurement, group by activityId, activityName, subjectId
-##TODO
+dt <- as.data.table(dataTidy)
+dataAverage <- dt[, lapply(.SD, mean), by=list(activityId, activityName, subjectId)]
 
 #write the new average data to a file
-##TODO
+write.table(dataAverage, file=tidyAverageDataFilename, sep=" ", row.names=FALSE, append=FALSE)
