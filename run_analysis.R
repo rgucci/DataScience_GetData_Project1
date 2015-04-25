@@ -10,8 +10,8 @@ dataXTrainDataFilename <- paste(dataDir, "train", "x_train.txt", sep="/")
 dataYTrainDataFilename <- paste(dataDir, "train", "y_train.txt", sep="/")
 
 #output filenames
-tidyDataFilename <- "TidyData.txt"
-tidyAverageDataFilename <- "AverageData.txt"
+tidyDataFilename <- "TidyCombinedData.txt"
+tidyAverageDataFilename <- "TidyAverageData.txt"
 
 #get the list of meaningful variable names for the measurements
 varNames <- read.table(featuresFilename)
