@@ -1,4 +1,4 @@
-Codebook for Getting and Cleaning Data
+#Codebook for Getting and Cleaning Data
 =======================================
 
 One of the most exciting areas in all of data science right now is wearable computing - see for example this article . Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained: 
@@ -9,11 +9,11 @@ Here are the data for the project:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-There are 2 output files:
+#There are 2 output files:
 File: TidyCombinedData.txt (the combined data extracted from the original data set)
 File: TidyAverageData.txt (The combined data set aggregated to show the mean of each column grouped by activityName and subject ID)
 
-Data columns:
+#Data columns:
 activityId: ID of the activity performed
 activityName: Name of the activity performed: WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS, SITTING, STANDING, LAYING
 subjectID: ID of the subject performing the activity
@@ -86,3 +86,13 @@ fBodyBodyGyroMag-mean()
 fBodyBodyGyroMag-std()
 fBodyBodyGyroJerkMag-mean()
 fBodyBodyGyroJerkMag-std()
+
+#Original README File Information
+'README.txt'
+'features_info.txt': Shows information about the variables used on the feature vector.
+'features.txt': List of all features.
+'activity_labels.txt': Links the class labels with their activity name.
+'train/X_train.txt': Training set.
+'train/y_train.txt': Training labels.
+'test/X_test.txt': Test set.
+'test/y_test.txt': Test labels.
